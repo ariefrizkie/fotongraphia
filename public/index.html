@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foton Graphia</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="box-border font-roboto">
+    <header
+      class="w-sceen sticky top-0 flex justify-center py-3 bg-gradient-to-r from-cyan-600 to-purple-500 z-50"
+    >
+      <nav class="navbar-container w-11/12 flex justify-between text-white">
+        <div>
+          <img
+            class="h-10"
+            src="../src/img/Logo-foton.svg"
+            alt="Foton Graphia"
+          />
+        </div>
+        <div
+          class="nav-menu flex justify-between items-center font-semibold text-xl w-1/2 text-center"
+        >
+          <a
+            class="menu home transition-all ease-in hover:font-bold w-1/4"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="menu product transition-all ease-in hover:font-bold w-1/4"
+            href="#"
+            >Produk</a
+          >
+          <a
+            class="menu faq transition-all ease-in hover:font-bold w-1/4"
+            href="#"
+            >Faq</a
+          >
+          <a
+            class="menu contact transition-all ease-in hover:font-bold w-1/4"
+            href="#"
+            >Kontak Kami</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="font-roboto">
+      <section
+        id="hero"
+        class="bg-cyan-500 w-screen flex h-[85vh] md:h-[65vh] lg:h-[85vh]"
+      >
+        <!-- arow 1 -->
+        <!-- arow 2 -->
+        <!-- Navigate -->
+        <div class="carousel w-full">
+          <div
+            class="slide flex flex-col md:flex-row-reverse h-full w-full items-center justify-center md:relative"
+          >
+            <div
+              class="hero-img h-3/5 sm:h-[70%] md:h-full w-full min-h-64 flex justify-end"
+            >
+              <img
+                class="h-full object-cover"
+                src="../src/img/web-banner.webp"
+              />
+            </div>
+            <div
+              class="hero-desc flex flex-col justify-center items-center h-2/5 sm:h-[30%] md:h-full md:absolute md:items-start w-11/12 text-white"
+            >
+              <h2
+                class="text-2xl sm:text-3xl md:text-4xl md:mb-3 lg:text-5xl font-bold"
+              >
+                Cetak A3+
+              </h2>
+              <h1
+                class="text-4xl sm:text-5xl md:text-6xl md:mb-3 lg:text-6xl font-bold"
+              >
+                Stiker Bontak
+              </h1>
+              <p class="text-sm sm:text-lg md:mb-3 lg:text-2xl font-semibold">
+                Cetak stiker mulai harga Rp. 5.000,-
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kategori" class="py-12">
+        <div class="w-11/12 mx-auto">
+          <div class="kategori-item">
+            <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
+              Kategori Produk
+            </h1>
+            <div
+              class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-7 xl:gap-x-8"
+            >
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/sticker.png"
+                    alt="stiker"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Stiker
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/printer.png"
+                    alt="digital print"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Digital Print
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/billboard.png"
+                    alt="promosi acara"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Promosi & Acara
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/invitation.png"
+                    alt="undangan"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Kartu & undangan
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/tshirt.png"
+                    alt="sablon"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  textile & Sablon
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/pen.png"
+                    alt="stationary"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Stationary
+                </h3>
+              </div>
+              <div
+                class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
+              >
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 mb-4"
+                >
+                  <img
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    src="../src/img/kategori/souvenir.png"
+                    alt="merchandise"
+                  />
+                </div>
+                <h3 class="text-sm font-bold text-center text-slate-800">
+                  Merchandise
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="produk" class="py-12">
+        <div class="w-11/12 mx-auto">
+          <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
+            Product List
+          </h1>
+          <div class="produk-item">
+            <h1 class="font-bold text-2xl text-cyan-800 mb-6">Stiker</h1>
+            <div
+              class="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"
+            >
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikerbontak.png"
+                    alt="stiker bontak"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Bontak
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker A3+ full color
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 8.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikervinyl.png"
+                    alt="stiker vinyl"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Vinyl
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker A3+ full color
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 18.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikertransparan.png"
+                    alt="Stiker Transparant"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4n">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Transparan
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker A3+ full color
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 18.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikerhologram.png"
+                    alt="stiker hologram"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Hologram
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker A3+ full color
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 25.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stiker-oneway.jpg"
+                    alt="stiker oneway"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Oneway
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker tembus pandang dari dalam
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 120.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikerkue.png"
+                    alt="stiker cuting"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Label
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker untuk label kue dan lainnya
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 15.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative shadow-md rounded-md p-2">
+                <div
+                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    src="../src/img/produk/stiker/stikercuting.jpeg"
+                    alt="stiker cuting"
+                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-sm text-gray-700">
+                      <a href="#">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Stiker Cutting
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                      Stiker cutting A3+ atau meteran
+                    </p>
+                    <p class="mt-1 text-sm font-medium text-gray-900">
+                      Rp. 5.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="py-12">
+        <div class="w-11/12 lg:w-8/12 mx-auto">
+          <div class="faq-list">
+            <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
+              FAQ
+            </h1>
+            <div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+              <div class="border-t-2">
+                <div class="flex justify-between p-2">
+                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="p-2">
+                  <p class="pl-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Asperiores ipsam dicta natus nobis minima id, optio quas
+                    quidem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kontakkami" class="py-12">
+        <div class="w-11/12 mx-auto">
+          <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
+            Kontak Kami
+          </h1>
+          <div class="grid md:grid-cols-3">
+            <a
+              href="https://wa.me/085157228295"
+              class="block bg-green-600 text-center p-10 text-xl group hover:bg-green-200 transition-all duration-500"
+            >
+              <i
+                class="fa-brands fa-whatsapp text-white text-4xl mb-2 group-hover:text-green-600"
+              ></i>
+              <p class="font-bold text-white group-hover:text-green-600">
+                WhatsApp
+              </p>
+            </a>
+            <a
+              href="mailto:fotongraphia@gmail.com"
+              class="block bg-red-600 text-center p-10 text-xl group hover:bg-red-200 transition-all duration-500"
+            >
+              <i
+                class="fa-solid fa-envelope text-white text-4xl mb-2 group-hover:text-red-600"
+              ></i>
+              <p class="font-bold text-white group-hover:text-red-600">
+                fotongraphia@gmail.com
+              </p>
+            </a>
+            <a
+              href="https://www.instagram.com/foton_graphia/"
+              class="block bg-fuchsia-600 text-center p-10 text-xl group hover:bg-fuchsia-200 transition-all duration-500"
+            >
+              <i
+                class="fa-brands fa-instagram text-white text-4xl mb-2 group-hover:text-fuchsia-600"
+              ></i>
+              <p class="font-bold text-white group-hover:text-fuchsia-600">
+                foton_graphia
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="px-12 bg-gradient-to-r from-cyan-600 to-purple-500 text-center md:text-left"
+    >
+      <div class="grid md:grid-cols-3 py-10">
+        <div class="kategori-produk pb-6 md:pb-0">
+          <h3 class="text-lg font-bold pb-2 text-white">Kategori Produk</h3>
+          <ul class="text-slate-200">
+            <li>
+              <a href="#" class="hover:text-white">Stiker</a>
+            </li>
+            <li><a href="#" class="hover:text-white">Digital Print</a></li>
+            <li><a href="#" class="hover:text-white">Promosi & Acara</a></li>
+            <li><a href="#" class="hover:text-white">Kartu & Undangan</a></li>
+            <li><a href="#" class="hover:text-white">textile & Sablon</a></li>
+            <li><a href="#" class="hover:text-white">Stationary</a></li>
+            <li><a href="#" class="hover:text-white">Merchandise</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer pb-6 md:pb-0">
+          <h3 class="text-lg font-bold pb-2 text-white">Menu</h3>
+          <ul class="text-slate-200">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#produk" class="hover:text-white">Produk</a></li>
+            <li><a href="#faq" class="hover:text-white">Faq</a></li>
+            <li>
+              <a href="#kontakkami" class="hover:text-white">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+        <div class="jam-kerja">
+          <h3 class="text-lg font-bold pb-2 text-white">Jam Kerja</h3>
+          <p class="text-slate-200">Senin - Sabtu : 09.00 - 17.00</p>
+          <p class="text-slate-200">Minggu : Tutup</p>
+        </div>
+      </div>
+      <div class="p-4 text-center">
+        <p class="text-white text-sm">Copyright &copy; Foton Graphia 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
