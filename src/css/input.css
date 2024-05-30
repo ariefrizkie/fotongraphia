@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-line {
+  @apply w-[30px] h-[2px] my-2 block bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.mobile-menu {
+  @apply absolute p-5 bg-white text-slate-800 shadow-lg rounded-lg max-w-[250px] w-full right-0 top-[32px];
+}
+
+.open {
+  @apply right-0;
+}
+
+.close {
+  @apply right-[-300px];
+}

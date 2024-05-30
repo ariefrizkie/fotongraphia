@@ -22,38 +22,75 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"
+    ></script>
   </head>
   <body class="box-border font-roboto">
     <header
       class="w-sceen sticky top-0 flex justify-center py-3 bg-gradient-to-r from-cyan-600 to-purple-500 z-50"
     >
-      <nav class="navbar-container w-11/12 flex justify-between text-white">
-        <div>
+      <nav
+        class="relative navbar-container w-11/12 flex justify-between items-center text-white"
+      >
+        <div class="w-8/12">
           <img class="h-10" src="src/img/Logo-foton.svg" alt="Foton Graphia" />
         </div>
-        <div
-          class="nav-menu flex justify-between items-center font-semibold text-xl w-1/2 text-center"
-        >
-          <a
-            class="menu home transition-all ease-in hover:font-bold w-1/4"
-            href="#"
-            >Home</a
+        <div x-data="{open:false}" class="w-full relative">
+          <div
+            :class="open ? 'open' : 'close'"
+            class="nav-menu md:block mobile-menu font-semibold text-xl md:static md:bg-transparent md:shadow-none md:rounded-none md:text-white md:max-w-full md:p-0 transition-all duration-300 ease-in-out"
           >
-          <a
-            class="menu product transition-all ease-in hover:font-bold w-1/4"
-            href="#"
-            >Produk</a
+            <!-- flex md:justify-between items-center   text-center -->
+            <div
+              class="flex flex-col gap-4 md:flex-row md:w-full md:justify-between"
+            >
+              <a
+                class="block menu home transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="block menu product transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                href="#produk"
+                >Produk</a
+              >
+              <a
+                class="block menu faq transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                href="#faq"
+                >Faq</a
+              >
+              <a
+                class="block menu contact transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                href="#kontakkami"
+                >Kontak Kami</a
+              >
+            </div>
+          </div>
+          <div
+            @click.outside="open=false"
+            class="md:hidden flex items-center px-4"
           >
-          <a
-            class="menu faq transition-all ease-in hover:font-bold w-1/4"
-            href="#"
-            >Faq</a
-          >
-          <a
-            class="menu contact transition-all ease-in hover:font-bold w-1/4"
-            href="#"
-            >Kontak Kami</a
-          >
+            <button
+              @click="open = ! open"
+              :class="open ? 'hamburger-active' : ''"
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4"
+            >
+              <span
+                class="menu-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="menu-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="menu-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
