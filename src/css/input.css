@@ -19,11 +19,3 @@
 .mobile-menu {
   @apply absolute p-5 bg-white text-slate-800 shadow-lg rounded-lg max-w-[250px] w-full right-0 top-[32px];
 }
-
-.open {
-  @apply right-0;
-}
-
-.close {
-  @apply right-[-300px];
-}

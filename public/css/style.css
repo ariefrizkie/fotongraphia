@@ -627,6 +627,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -645,6 +649,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .min-h-64 {
@@ -802,6 +818,10 @@ video {
   padding: 1rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -825,6 +845,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-2 {
@@ -944,6 +969,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1001,14 +1032,6 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.open {
-  right: 0px;
-}
-
-.close {
-  right: -300px;
 }
 
 .hover\:bg-fuchsia-200:hover {

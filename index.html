@@ -22,10 +22,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"
-    ></script>
   </head>
   <body class="box-border font-roboto overflow-x-hidden">
     <header
@@ -37,44 +33,37 @@
         <div class="w-8/12">
           <img class="h-10" src="src/img/Logo-foton.svg" alt="Foton Graphia" />
         </div>
-        <div x-data="{open:false}" class="w-full relative">
+        <div id="menu" class="w-full relative">
           <div
-            :class="open ? 'open' : 'close'"
-            class="nav-menu md:block mobile-menu font-semibold text-xl md:static md:bg-transparent md:shadow-none md:rounded-none md:text-white md:max-w-full md:p-0 transition-all duration-300 ease-in-out"
+            class="nav-menu md:block mobile-menu font-semibold text-xl md:static md:bg-transparent md:shadow-none md:rounded-none md:text-white md:max-w-full md:p-0 hidden"
           >
-            <!-- flex md:justify-between items-center   text-center -->
             <div
               class="flex flex-col gap-4 md:flex-row md:w-full md:justify-between"
             >
               <a
-                class="block menu home transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                class="block menu-item home transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
                 href="#"
                 >Home</a
               >
               <a
-                class="block menu product transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                class="block menu-item product transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
                 href="#produk"
                 >Produk</a
               >
               <a
-                class="block menu faq transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                class="block menu-item faq transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
                 href="#faq"
                 >Faq</a
               >
               <a
-                class="block menu contact transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
+                class="block menu-item contact transition-all ease-in hover:font-bold hover:text-blue-600 md:hover:text-slate-200"
                 href="#kontakkami"
                 >Kontak Kami</a
               >
             </div>
           </div>
-          <div
-            @click.outside="open=false"
-            class="md:hidden flex items-center px-4"
-          >
+          <div class="md:hidden flex items-center px-4">
             <button
-              @click="open = ! open"
-              :class="open ? 'hamburger-active' : ''"
               id="hamburger"
               name="hamburger"
               type="button"
@@ -99,9 +88,11 @@
         id="hero"
         class="bg-cyan-500 flex h-[85vh] md:h-[65vh] lg:h-[85vh]"
       >
-        <!-- arow 1 -->
-        <!-- arow 2 -->
-        <!-- Navigate -->
+        <!-- <div class="arrow"></div>
+        <div class="navigate">
+          <div></div>
+        </div> -->
+
         <div class="carousel w-full">
           <div
             class="slide flex flex-col md:flex-row-reverse h-full w-full items-center justify-center md:relative"
@@ -115,10 +106,9 @@
               class="hero-desc flex flex-col justify-center items-center h-2/5 sm:h-[30%] md:h-full md:absolute md:items-start w-11/12 text-white"
             >
               <h2
+                x-text="slide.categori"
                 class="text-2xl sm:text-3xl md:text-4xl md:mb-3 lg:text-5xl font-bold"
-              >
-                Cetak A3+
-              </h2>
+              ></h2>
               <h1
                 class="text-4xl sm:text-5xl md:text-6xl md:mb-3 lg:text-6xl font-bold"
               >
@@ -482,18 +472,18 @@
       </section>
       <section id="faq" class="py-12">
         <div class="w-11/12 lg:w-8/12 mx-auto">
-          <div class="faq-list">
+          <div>
             <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
               FAQ
             </h1>
-            <div>
+            <div class="faq-list">
               <div class="border-t-2">
-                <div class="flex justify-between p-2">
+                <div class="faq-title flex justify-between px-2 py-3">
                   <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
                   <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="p-2">
-                  <p class="pl-2">
+                <div class="faq-detail overflow-hidden h-0">
+                  <p class="p-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Asperiores ipsam dicta natus nobis minima id, optio quas
                     quidem.
@@ -501,12 +491,14 @@
                 </div>
               </div>
               <div class="border-t-2">
-                <div class="flex justify-between p-2">
+                <div class="faq-title flex justify-between px-2 py-3">
                   <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
                   <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="p-2">
-                  <p class="pl-2">
+                <div
+                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
+                >
+                  <p class="p-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Asperiores ipsam dicta natus nobis minima id, optio quas
                     quidem.
@@ -514,12 +506,14 @@
                 </div>
               </div>
               <div class="border-t-2">
-                <div class="flex justify-between p-2">
+                <div class="faq-title flex justify-between px-2 py-3">
                   <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
                   <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="p-2">
-                  <p class="pl-2">
+                <div
+                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
+                >
+                  <p class="p-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Asperiores ipsam dicta natus nobis minima id, optio quas
                     quidem.
@@ -527,12 +521,14 @@
                 </div>
               </div>
               <div class="border-t-2">
-                <div class="flex justify-between p-2">
+                <div class="faq-title flex justify-between px-2 py-3">
                   <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
                   <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="p-2">
-                  <p class="pl-2">
+                <div
+                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
+                >
+                  <p class="p-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Asperiores ipsam dicta natus nobis minima id, optio quas
                     quidem.
@@ -540,25 +536,14 @@
                 </div>
               </div>
               <div class="border-t-2">
-                <div class="flex justify-between p-2">
+                <div class="faq-title flex justify-between px-2 py-3">
                   <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
                   <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="p-2">
-                  <p class="pl-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="border-t-2">
-                <div class="flex justify-between p-2">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="p-2">
-                  <p class="pl-2">
+                <div
+                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
+                >
+                  <p class="p-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Asperiores ipsam dicta natus nobis minima id, optio quas
                     quidem.
@@ -651,5 +636,7 @@
         <p class="text-white text-sm">Copyright &copy; Foton Graphia 2024</p>
       </div>
     </footer>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>
