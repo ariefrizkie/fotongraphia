@@ -6,6 +6,12 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
+document.addEventListener("click", (e) => {
+  if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+  }
+});
 // faq
 const faqTitle = document.querySelectorAll(".faq-title");
 const faqDetail = document.querySelectorAll(".faq-detail");
