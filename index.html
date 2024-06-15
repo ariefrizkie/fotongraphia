@@ -84,41 +84,42 @@
       </nav>
     </header>
     <main class="font-roboto">
-      <section
-        id="hero"
-        class="bg-cyan-500 flex h-[85vh] md:h-[65vh] lg:h-[85vh]"
-      >
-        <!-- <div class="arrow"></div>
-        <div class="navigate">
-          <div></div>
-        </div> -->
-
-        <div class="carousel w-full">
-          <div
-            class="slide flex flex-col md:flex-row-reverse h-full w-full items-center justify-center md:relative"
+      <section id="hero" class="group flex relative">
+        <div
+          class="arrow absolute top-[40%] w-full z-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        >
+          <button
+            class="next absolute right-[5%] md:right-4 bg-white bg-opacity-20 p-1 rounded-md"
           >
-            <div
-              class="hero-img h-3/5 sm:h-[70%] md:h-full w-full min-h-64 flex justify-end"
-            >
-              <img class="h-full object-cover" src="src/img/web-banner.webp" />
-            </div>
-            <div
-              class="hero-desc flex flex-col justify-center items-center h-2/5 sm:h-[30%] md:h-full md:absolute md:items-start w-11/12 text-white"
-            >
-              <h2
-                x-text="slide.categori"
-                class="text-2xl sm:text-3xl md:text-4xl md:mb-3 lg:text-5xl font-bold"
-              ></h2>
-              <h1
-                class="text-4xl sm:text-5xl md:text-6xl md:mb-3 lg:text-6xl font-bold"
-              >
-                Stiker Bontak
-              </h1>
-              <p class="text-sm sm:text-lg md:mb-3 lg:text-2xl font-semibold">
-                Cetak stiker mulai harga Rp. 5.000,-
-              </p>
-            </div>
-          </div>
+            <i class="fa-solid fa-angle-right text-4xl md:text-5xl"></i>
+          </button>
+          <button
+            class="prev absolute left-[5%] md:left-4 bg-white bg-opacity-20 p-1 rounded-md"
+          >
+            <i class="fa-solid fa-angle-left text-4xl md:text-5xl"></i>
+          </button>
+        </div>
+        <div
+          class="navigate absolute bottom-2 w-full flex justify-center z-50 gap-2"
+        >
+          <!-- <button
+            class="navigate-item block navigate-active bg-white rounded-full bg-opacity-50 transition-all duration-1000"
+          >
+            <span class="block h-2 w-0 rounded-full"></span>
+          </button>
+          <button
+            class="navigate-item block navigate-off bg-white rounded-full bg-opacity-50 transition-all duration-1000"
+          >
+            <span class="block h-2 w-0 rounded-full"></span>
+          </button> -->
+        </div>
+
+        <div class="h-[85vh] md:h-[65vh] lg:h-[85vh] w-full">
+          <div
+            id="carousel"
+            style="left: 0"
+            class="carousel absolute w-max h-full flex justify-between transition-all duration-1000"
+          ></div>
         </div>
       </section>
       <section id="kategori" class="py-12">
@@ -637,6 +638,6 @@
       </div>
     </footer>
 
-    <script src="src/js/script.js"></script>
+    <script src="public/js/script.js"></script>
   </body>
 </html>

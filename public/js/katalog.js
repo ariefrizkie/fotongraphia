@@ -5,6 +5,7 @@ export const slides = [
     categori: "Cetak A3+",
     desc: "Cetak stiker mulai harga Rp. 5.000,-",
     img: "src/img/slides/bontak-slide.png",
+    color: "bg-cyan-500",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const slides = [
     categori: "Sablon DTF",
     desc: "Sablon kaos sesuai keinginan dan selera anda",
     img: "src/img/slides/baju-slide.png",
+    color: "bg-red-600",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const slides = [
     categori: "Cetak Kalender",
     desc: "Bikin kalender untuk menghias meja kamu",
     img: "src/img/slides/kalender-slide.png",
+    color: "bg-orange-500",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const slides = [
     categori: "Banner Promosi",
     desc: "Cetak X Banner untuk usaha atau event kamu",
     img: "src/img/slides/x-bannerr-slide.png",
+    color: "bg-teal-400",
   },
   {
     id: 5,
@@ -33,5 +37,6 @@ export const slides = [
     categori: "Souvenir & Hadiah",
     desc: "jam custom untuk hadiah atau hiasan kamarmu",
     img: "src/img/slides/jam-dinding-slide.png",
+    color: "bg-green-400",
   },
 ];

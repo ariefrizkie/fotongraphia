@@ -19,3 +19,11 @@
 .mobile-menu {
   @apply absolute p-5 bg-white text-slate-800 shadow-lg rounded-lg max-w-[250px] w-full right-0 top-[32px];
 }
+
+.navigate-active {
+  @apply h-2 w-14;
+}
+
+.navigate-off {
+  @apply h-2 w-2;
+}
