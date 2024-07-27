@@ -1,62 +1,11 @@
 // menu dan toggle
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector(".nav-menu");
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("hamburger-active");
-  navMenu.classList.toggle("hidden");
-});
+import { menu } from "./menutoggle.js";
+// import { carouselElement, navigateElement, reloadSlider } from "./carousel.js";
+import { slides, produk } from "./katalog.js";
 
-document.addEventListener("click", (e) => {
-  if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-    hamburger.classList.remove("hamburger-active");
-    navMenu.classList.add("hidden");
-  }
-});
+menu();
 
 // carousel object
-
-const slides = [
-  {
-    id: 1,
-    name: "Stiker Bontak",
-    categori: "Cetak A3+",
-    desc: "Cetak stiker mulai harga Rp. 5.000,-",
-    img: "src/img/slides/bontak-slide.png",
-    color: "bg-cyan-500",
-  },
-  {
-    id: 2,
-    name: "Sablon Baju/Kaos",
-    categori: "Sablon DTF",
-    desc: "Sablon kaos sesuai keinginan dan selera anda",
-    img: "src/img/slides/baju-slide.png",
-    color: "bg-red-600",
-  },
-  {
-    id: 3,
-    name: "Kalender Duduk",
-    categori: "Cetak Kalender",
-    desc: "Bikin kalender untuk menghias meja kamu",
-    img: "src/img/slides/kalender-slide.png",
-    color: "bg-orange-500",
-  },
-  {
-    id: 4,
-    name: "X/Y Banner",
-    categori: "Banner Promosi",
-    desc: "Cetak X Banner untuk usaha atau event kamu",
-    img: "src/img/slides/x-bannerr-slide.png",
-    color: "bg-teal-400",
-  },
-  {
-    id: 5,
-    name: "Jam Dinding",
-    categori: "Souvenir & Hadiah",
-    desc: "jam custom untuk hadiah atau hiasan kamarmu",
-    img: "src/img/slides/jam-dinding-slide.png",
-    color: "bg-green-400",
-  },
-];
 
 let carousel = document.getElementById("carousel");
 const navigateContainer = document.querySelector(".navigate");
@@ -258,20 +207,159 @@ navigate.forEach((item, i) => {
 //   }
 // });
 
-// faq
-const faqTitle = document.querySelectorAll(".faq-title");
-const faqDetail = document.querySelectorAll(".faq-detail");
+// Product List
 
-faqTitle.forEach((faq, i) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("open");
-    if (faq.classList.contains("open")) {
-      faqDetail[i].classList.replace("h-0", `h-[${faqDetail[i].scrollHeight}]`);
-      faq.querySelector("i").classList.replace("fa-plus", "fa-minus");
-    } else {
-      faqDetail[i].classList.replace(`h-[${faqDetail[i].scrollHeight}]`, "h-0");
-      faq.querySelector("i").classList.replace("fa-minus", "fa-plus");
-    }
-    // faqDetail[i].classList.toggle("hidden");
-  });
-});
+const product = document.getElementById("produk");
+
+// function listProduk() {
+//   produk.map((kategori) => {
+//     console.log(kategori.kategori);
+//     return itemContainer(kategori.kategori);
+//   });
+// }
+
+function productContainer() {
+  const container = document.createElement("div");
+  container.classList.add("w-11/12", "mx-auto");
+
+  const title = document.createElement("h1");
+  title.classList.add(
+    "font-bold",
+    "text-center",
+    "text-3xl",
+    "text-cyan-800",
+    "mb-6"
+  );
+
+  title.innerText = "Product List";
+
+  const itemCont = itemContainer();
+
+  container.appendChild(title);
+  container.appendChild(itemCont);
+  // itemContainer(produkItem);
+  product.appendChild(container);
+}
+
+function itemContainer() {
+  const produkItem = document.createElement("div");
+  produkItem.classList.add("produk-item");
+  for (const kategori of produk) {
+    const produkKategori = document.createElement("div");
+
+    const kategoriTitleContainer = document.createElement("div");
+    kategoriTitleContainer.classList.add(
+      "text-center",
+      "w-full",
+      "bg-blue-400",
+      "mt-8"
+    );
+
+    const title = document.createElement("h1");
+    title.classList.add("font-bold", "text-2xl", "text-white", "mb-6", "py-2");
+    title.innerText = kategori.kategori;
+
+    const subItem = subitemContainer(kategori.item);
+    // subItemCont.appendChild(subItem);
+    kategoriTitleContainer.appendChild(title);
+    produkKategori.appendChild(kategoriTitleContainer);
+    produkKategori.appendChild(subItem);
+
+    // productContainer(produkKategori);
+    // cont.appendChild(produkKategori);
+    produkItem.append(produkKategori);
+  }
+  return produkItem;
+}
+
+function subitemContainer(item) {
+  const subItemCont = document.createElement("div");
+  subItemCont.classList.add(
+    "mt-6",
+    "grid",
+    "grid-cols-2",
+    "gap-x-6",
+    "gap-y-10",
+    "sm:grid-cols-3",
+    "lg:grid-cols-5",
+    "xl:gap-x-8"
+  );
+  for (const prod of item) {
+    const subItem = document.createElement("div");
+    subItem.classList.add(
+      "group",
+      "relative",
+      "shadow-md",
+      "rounded-md",
+      "p-2"
+    );
+
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add(
+      "aspect-h-1",
+      "aspect-w-1",
+      "w-full",
+      "overflow-hidden",
+      "rounded-md",
+      "bg-gray-200",
+      "lg:aspect-none",
+      "group-hover:opacity-75"
+    );
+
+    const imgItem = document.createElement("img");
+    imgItem.classList.add(
+      "h-full",
+      "w-full",
+      "object-cover",
+      "object-center",
+      "lg:h-full",
+      "lg:w-full"
+    );
+    imgItem.setAttribute("src", prod.img);
+    imgItem.setAttribute("alt", prod.nama);
+
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("mt-4");
+
+    const cont = document.createElement("div");
+
+    const titleSubItem = document.createElement("h3");
+    titleSubItem.classList.add("text-sm", "text-gray-700");
+
+    const titleLink = document.createElement("a");
+    titleLink.setAttribute("href", "#");
+    titleLink.classList.add("hover:text-blue-700", "font-bold");
+    titleLink.innerText = prod.nama;
+
+    const descItem = document.createElement("p");
+    descItem.classList.add("mt-1", "text-sm", "text-gray-500");
+    descItem.innerText = prod.deskripsi;
+
+    const hargaItem = document.createElement("p");
+    hargaItem.classList.add("mt-1", "text-sm", "font-medium", "text-gray-900");
+    hargaItem.innerText = `Rp. ${prod.Harga} / ${prod.satuan}`;
+
+    titleSubItem.appendChild(titleLink);
+
+    cont.appendChild(titleSubItem);
+    cont.appendChild(descItem);
+    cont.appendChild(hargaItem);
+
+    imgContainer.appendChild(imgItem);
+    textContainer.appendChild(cont);
+
+    subItem.appendChild(imgContainer);
+    subItem.appendChild(textContainer);
+    subItemCont.appendChild(subItem);
+  }
+  return subItemCont;
+  // item.appendChild(subItem);
+}
+
+productContainer();
+
+// faq
+
+import { faqItems, faqExpand } from "./faq.js";
+faqItems();
+faqExpand();

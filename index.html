@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Foton Graphia</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- tailwind -->
     <link rel="stylesheet" href="public/css/style.css" />
@@ -22,6 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="box-border font-roboto">
     <header
@@ -121,6 +125,7 @@
               class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-7 xl:gap-x-8"
             >
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -137,6 +142,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -153,6 +159,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -169,6 +176,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -185,6 +193,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -201,6 +210,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -217,6 +227,7 @@
                 </h3>
               </div>
               <div
+                data-aos="fade-up"
                 class="kategori-item relative p-4 shadow-md rounded-xl cursor-pointer hover:bg-slate-100 transition duration-300"
               >
                 <div
@@ -236,311 +247,14 @@
           </div>
         </div>
       </section>
-      <section id="produk" class="py-12">
-        <div class="w-11/12 mx-auto">
-          <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
-            Product List
-          </h1>
-          <div class="produk-item">
-            <h1 class="font-bold text-2xl text-cyan-800 mb-6">Stiker</h1>
-            <div
-              class="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"
-            >
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikerbontak.png"
-                    alt="stiker bontak"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Bontak
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker A3+ full color
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 8.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikervinyl.png"
-                    alt="stiker vinyl"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Vinyl
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker A3+ full color
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 18.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikertransparan.png"
-                    alt="Stiker Transparant"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4n">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Transparan
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker A3+ full color
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 18.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikerhologram.png"
-                    alt="stiker hologram"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Hologram
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker A3+ full color
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 25.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stiker-oneway.jpg"
-                    alt="stiker oneway"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Oneway
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker tembus pandang dari dalam
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 120.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikerkue.png"
-                    alt="stiker cuting"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Label
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker untuk label kue dan lainnya
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 15.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="group relative shadow-md rounded-md p-2">
-                <div
-                  class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75"
-                >
-                  <img
-                    src="src/img/produk/stiker/stikercuting.jpeg"
-                    alt="stiker cuting"
-                    class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                  />
-                </div>
-                <div class="mt-4">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="#">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Stiker Cutting
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">
-                      Stiker cutting A3+ atau meteran
-                    </p>
-                    <p class="mt-1 text-sm font-medium text-gray-900">
-                      Rp. 5.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="produk" class="py-12"></section>
       <section id="faq" class="py-12">
         <div class="w-11/12 lg:w-8/12 mx-auto">
           <div>
             <h1 class="font-bold text-center text-3xl text-cyan-800 mb-6">
               FAQ
             </h1>
-            <div class="faq-list">
-              <div class="border-t-2">
-                <div class="faq-title flex justify-between px-2 py-3">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="faq-detail overflow-hidden h-0">
-                  <p class="p-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="border-t-2">
-                <div class="faq-title flex justify-between px-2 py-3">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div
-                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
-                >
-                  <p class="p-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="border-t-2">
-                <div class="faq-title flex justify-between px-2 py-3">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div
-                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
-                >
-                  <p class="p-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="border-t-2">
-                <div class="faq-title flex justify-between px-2 py-3">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div
-                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
-                >
-                  <p class="p-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-              <div class="border-t-2">
-                <div class="faq-title flex justify-between px-2 py-3">
-                  <h2 class="font-bold">Lorem ipsum dolor sit amet?</h2>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-                <div
-                  class="faq-detail overflow-hidden h-0 transition-transform ease-in-out duration-500"
-                >
-                  <p class="p-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores ipsam dicta natus nobis minima id, optio quas
-                    quidem.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="faq-list" id="faq-list"></div>
           </div>
         </div>
       </section>
@@ -626,7 +340,10 @@
         <p class="text-white text-sm">Copyright &copy; Foton Graphia 2024</p>
       </div>
     </footer>
-
-    <script src="public/js/script.js"></script>
+    <script type="module" src="public/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
