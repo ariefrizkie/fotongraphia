@@ -6,6 +6,7 @@ export function faqItems() {
   for (const faqAsks of faq) {
     const faqItem = document.createElement("div");
     faqItem.classList.add("border-t-2");
+    faqItem.setAttribute("data-aos", "fade-up");
 
     const faqTitle = document.createElement("div");
     faqTitle.classList.add(

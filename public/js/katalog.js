@@ -4,7 +4,7 @@ export const slides = [
     name: "Stiker Bontak",
     categori: "Cetak A3+",
     desc: "Cetak stiker mulai harga Rp. 5.000,-",
-    img: "src/img/slides/bontak-slide.png",
+    img: "src/img/slides/bontak-slide.webp",
     color: "bg-cyan-500",
   },
   {
@@ -12,7 +12,7 @@ export const slides = [
     name: "Sablon Baju/Kaos",
     categori: "Sablon DTF",
     desc: "Sablon kaos sesuai keinginan dan selera anda",
-    img: "src/img/slides/baju-slide.png",
+    img: "src/img/slides/baju-slide.webp",
     color: "bg-red-600",
   },
   {
@@ -20,7 +20,7 @@ export const slides = [
     name: "Kalender Duduk",
     categori: "Cetak Kalender",
     desc: "Bikin kalender untuk menghias meja kamu",
-    img: "src/img/slides/kalender-slide.png",
+    img: "src/img/slides/kalender-slide.webp",
     color: "bg-orange-500",
   },
   {
@@ -28,7 +28,7 @@ export const slides = [
     name: "X/Y Banner",
     categori: "Banner Promosi",
     desc: "Cetak X Banner untuk usaha atau event kamu",
-    img: "src/img/slides/x-bannerr-slide.png",
+    img: "src/img/slides/x-bannerr-slide.webp",
     color: "bg-teal-400",
   },
   {
@@ -36,7 +36,7 @@ export const slides = [
     name: "Jam Dinding",
     categori: "Souvenir & Hadiah",
     desc: "jam custom untuk hadiah atau hiasan kamarmu",
-    img: "src/img/slides/jam-dinding-slide.png",
+    img: "src/img/slides/jam-dinding-slide.webp",
     color: "bg-green-400",
   },
 ];
@@ -51,7 +51,7 @@ export const produk = [
         deskripsi: "Stiker A3+ full color",
         Harga: 10000,
         satuan: "Lbr",
-        img: "src/img/produk/stiker/stiker-bontak.png",
+        img: "src/img/produk/stiker/stiker-bontak.webp",
       },
       {
         id: 1002,
@@ -59,7 +59,7 @@ export const produk = [
         deskripsi: "Stiker A3+ full color",
         Harga: 20000,
         satuan: "Lbr",
-        img: "src/img/produk/stiker/stiker-vinyl.png",
+        img: "src/img/produk/stiker/stiker-vinyl.webp",
       },
       {
         id: 1003,
@@ -67,7 +67,7 @@ export const produk = [
         deskripsi: "Stiker A3+ full color",
         Harga: 20000,
         satuan: "Lbr",
-        img: "src/img/produk/stiker/stiker-transparan.png",
+        img: "src/img/produk/stiker/stiker-transparan.webp",
       },
       {
         id: 1004,
@@ -75,7 +75,7 @@ export const produk = [
         deskripsi: "Stiker A3+ full color",
         Harga: 30000,
         satuan: "Lbr",
-        img: "src/img/produk/stiker/stiker-hologram.png",
+        img: "src/img/produk/stiker/stiker-hologram.webp",
       },
       {
         id: 1005,
@@ -83,7 +83,7 @@ export const produk = [
         deskripsi: "Stiker tembus pandang dari dalam",
         Harga: 130000,
         satuan: "meter",
-        img: "src/img/produk/stiker/stiker-oneway.jpg",
+        img: "src/img/produk/stiker/stiker-oneway.webp",
       },
       {
         id: 1006,
@@ -91,7 +91,7 @@ export const produk = [
         deskripsi: "Stiker ukuran besar dari 1 meter",
         Harga: 130000,
         satuan: "meter",
-        img: "src/img/produk/stiker/stiker-indoor.png",
+        img: "src/img/produk/stiker/stiker-indoor.webp",
       },
       {
         id: 1007,
@@ -99,7 +99,7 @@ export const produk = [
         deskripsi: "Jasa tambahan untuk cutting stiker",
         Harga: 7000,
         satuan: "Lbr",
-        img: "src/img/produk/stiker/stiker-cutting.jpeg",
+        img: "src/img/produk/stiker/stiker-cutting.webp",
       },
     ],
   },
@@ -112,7 +112,7 @@ export const produk = [
         deskripsi: "Cetak poster untuk promosi brand dan acara anda",
         Harga: 5000,
         satuan: "Lbr",
-        img: "src/img/produk/digital-print/poster-a4.png",
+        img: "src/img/produk/digital-print/poster-a4.webp",
       },
       {
         id: 2002,
@@ -120,7 +120,7 @@ export const produk = [
         deskripsi: "Cetak brosur berbagai ukuran untuk acara anda",
         Harga: 5000,
         satuan: "Lbr",
-        img: "src/img/produk/digital-print/brosur.png",
+        img: "src/img/produk/digital-print/brosur.webp",
       },
       {
         id: 2003,
@@ -128,7 +128,7 @@ export const produk = [
         deskripsi: "Cetak flyer dengan ukuran lebih kecil dari brosur",
         Harga: 2000,
         satuan: "Lbr",
-        img: "src/img/produk/digital-print/fliyer.png",
+        img: "src/img/produk/digital-print/fliyer.webp",
       },
       {
         id: 2004,
@@ -136,7 +136,7 @@ export const produk = [
         deskripsi: "Promosikan bisnis atau sekolah anda kepada orang banyak",
         Harga: 7000,
         satuan: "Lbr",
-        img: "src/img/produk/digital-print/brosur-lipat.png",
+        img: "src/img/produk/digital-print/brosur-lipat.webp",
       },
       {
         id: 2005,
@@ -144,7 +144,7 @@ export const produk = [
         deskripsi: "Cetak menu makanan dan minuman untuk usaha anda",
         Harga: 6000,
         satuan: "Lbr",
-        img: "src/img/produk/digital-print/menu.png",
+        img: "src/img/produk/digital-print/menu.webp",
       },
       {
         id: 2006,
@@ -152,7 +152,7 @@ export const produk = [
         deskripsi: "Bikin buku tahunan atau buku alumni, dan lainnya",
         Harga: 30000,
         satuan: "Pcs",
-        img: "src/img/produk/digital-print/buku.png",
+        img: "src/img/produk/digital-print/buku.webp",
       },
       {
         id: 2007,
@@ -160,7 +160,7 @@ export const produk = [
         deskripsi: "Cetak notebook untuk keperluan seminar atau yang lainnya",
         Harga: 10000,
         satuan: "Pcs",
-        img: "src/img/produk/digital-print/notebook.png",
+        img: "src/img/produk/digital-print/notebook.webp",
       },
       {
         id: 2008,
@@ -168,7 +168,7 @@ export const produk = [
         deskripsi: "Cetak buku yasin dan burdah dengan kualitas bagus",
         Harga: 15000,
         satuan: "Pcs",
-        img: "src/img/produk/digital-print/buku-yasin.png",
+        img: "src/img/produk/digital-print/buku-yasin.webp",
       },
       {
         id: 2009,
@@ -176,7 +176,7 @@ export const produk = [
         deskripsi: "Bikin Nota anda sendiri untuk berbagi keperluan",
         Harga: 135000,
         satuan: "Rim",
-        img: "src/img/produk/digital-print/nota.png",
+        img: "src/img/produk/digital-print/nota.webp",
       },
     ],
   },
@@ -189,7 +189,7 @@ export const produk = [
         deskripsi: "Cetak spanduk untuk promosikan acara, bisnis, dan lainnya",
         Harga: 25000,
         satuan: "meter",
-        img: "src/img/produk/promosi-dan-acara/spanduk.png",
+        img: "src/img/produk/promosi-dan-acara/spanduk.webp",
       },
       {
         id: 3002,
@@ -197,7 +197,7 @@ export const produk = [
         deskripsi: "Cetak dengan ukuran lebih besar dari spanduk",
         Harga: 25000,
         satuan: "meter",
-        img: "src/img/produk/promosi-dan-acara/baliho.png",
+        img: "src/img/produk/promosi-dan-acara/baliho.webp",
       },
       {
         id: 3003,
@@ -206,7 +206,7 @@ export const produk = [
           "Banner dengan stand besi yang kokoh untuk berbagai keperluan",
         Harga: 90000,
         satuan: "Set",
-        img: "src/img/produk/promosi-dan-acara/X-Stand_Banner.png",
+        img: "src/img/produk/promosi-dan-acara/X-Stand_Banner.webp",
       },
       {
         id: 3004,
@@ -214,7 +214,7 @@ export const produk = [
         deskripsi: "Spanduk/banner berbahan kain mirip bendera",
         Harga: 120000,
         satuan: "meter",
-        img: "src/img/produk/promosi-dan-acara/bendera-umbul-umbul.png",
+        img: "src/img/produk/promosi-dan-acara/bendera-umbul-umbul.webp",
       },
       {
         id: 3005,
@@ -222,7 +222,7 @@ export const produk = [
         deskripsi: "Banner yang lebih ringkas untuk dibawa dan disimpan",
         Harga: 135000,
         satuan: "Set",
-        img: "src/img/produk/promosi-dan-acara/roll-banner.png",
+        img: "src/img/produk/promosi-dan-acara/roll-banner.webp",
       },
     ],
   },
@@ -235,7 +235,7 @@ export const produk = [
         deskripsi: "Promosikan dan perkenalkan bisnis anda dengan kartu nama",
         Harga: 50000,
         satuan: "Box",
-        img: "src/img/produk/kartu-dan-undangan/kartu-nama.png",
+        img: "src/img/produk/kartu-dan-undangan/kartu-nama.webp",
       },
       {
         id: 4002,
@@ -243,7 +243,7 @@ export const produk = [
         deskripsi: "Kartu identitas untuk acara, sekolah dan kantor",
         Harga: 10000,
         satuan: "Pcs",
-        img: "src/img/produk/kartu-dan-undangan/id-card.png",
+        img: "src/img/produk/kartu-dan-undangan/id-card.webp",
       },
       {
         id: 4003,
@@ -252,7 +252,7 @@ export const produk = [
           "Bikin undangan untuk acara ulang tahun dengan berbagai macam desain",
         Harga: 10000,
         satuan: "Lbr",
-        img: "src/img/produk/kartu-dan-undangan/undangan-ultah.png",
+        img: "src/img/produk/kartu-dan-undangan/undangan-ultah.webp",
       },
       {
         id: 4004,
@@ -261,7 +261,7 @@ export const produk = [
           "Undang teman dan keluarga anda dengan undangan pernikahan yang sesuai selera anda",
         Harga: 130000,
         satuan: "Lbr",
-        img: "src/img/produk/kartu-dan-undangan/undangan-pernikahan.png",
+        img: "src/img/produk/kartu-dan-undangan/undangan-pernikahan.webp",
       },
       {
         id: 4005,
@@ -269,7 +269,7 @@ export const produk = [
         deskripsi: "Tulis dan kirim ucapan anda kepada teman atau keluarga",
         Harga: 10000,
         satuan: "Lbr",
-        img: "src/img/produk/kartu-dan-undangan/kartu-ucapan.png",
+        img: "src/img/produk/kartu-dan-undangan/kartu-ucapan.webp",
       },
     ],
   },
@@ -283,7 +283,7 @@ export const produk = [
           "Sablon baju dengan DTF, poliflex, atau sublim pilih sesuai kebutuhan anda",
         Harga: 100000,
         satuan: "Lbr",
-        img: "src/img/produk/textile-dan-sablon/sablon baju.png",
+        img: "src/img/produk/textile-dan-sablon/sablon baju.webp",
       },
       {
         id: 5002,
@@ -291,7 +291,7 @@ export const produk = [
         deskripsi: "Sablon Topi sesuai kebutuhan, dengan DTF atau bordir",
         Harga: 50000,
         satuan: "Pcs",
-        img: "src/img/produk/textile-dan-sablon/topi.png",
+        img: "src/img/produk/textile-dan-sablon/topi.webp",
       },
       {
         id: 5003,
@@ -299,7 +299,7 @@ export const produk = [
         deskripsi: "Tas berbahan kain untuk acara anda, dalam berbagai ukuran",
         Harga: 10000,
         satuan: "Pcs",
-        img: "src/img/produk/textile-dan-sablon/tas-spunbond.png",
+        img: "src/img/produk/textile-dan-sablon/tas-spunbond.webp",
       },
       {
         id: 5004,
@@ -308,7 +308,7 @@ export const produk = [
           "tas berbahan kertas dengan desain full color untuk berbagai kebutuhan",
         Harga: 15000,
         satuan: "Pcs",
-        img: "src/img/produk/textile-dan-sablon/paper-bag.png",
+        img: "src/img/produk/textile-dan-sablon/paper-bag.webp",
       },
       {
         id: 5005,
@@ -317,7 +317,7 @@ export const produk = [
           "sablon tas kain dengan bahan lebnih tebal dan cocok untuk sekolah dan jalan-jalan",
         Harga: 30000,
         satuan: "Lbr",
-        img: "src/img/produk/textile-dan-sablon/totebag.png",
+        img: "src/img/produk/textile-dan-sablon/totebag.webp",
       },
       {
         id: 5006,
@@ -326,7 +326,7 @@ export const produk = [
           "Cetak jersey untuk klub atau tim dengan bahan yg nyaman dah hasil yang bagus",
         Harga: 140000,
         satuan: "Lbr",
-        img: "src/img/produk/textile-dan-sablon/jersey.png",
+        img: "src/img/produk/textile-dan-sablon/jersey.webp",
       },
       {
         id: 5007,
@@ -335,7 +335,7 @@ export const produk = [
           "Cetak bendera komunitas atau perusahaan anda dangan hasil yang memuaskan",
         Harga: 7000,
         satuan: "Lbr",
-        img: "src/img/produk/textile-dan-sablon/bendera.png",
+        img: "src/img/produk/textile-dan-sablon/bendera.webp",
       },
     ],
   },
@@ -349,7 +349,7 @@ export const produk = [
           "Lanyard atau tali id card cocok untuk acara atau perkantoran",
         Harga: 20000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/lanyard.png",
+        img: "src/img/produk/stasionary/lanyard.webp",
       },
       {
         id: 6002,
@@ -358,7 +358,7 @@ export const produk = [
           "Nametag biasa atau resin timbul dengan desain sesuai keinginan",
         Harga: 50000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/nametag.png",
+        img: "src/img/produk/stasionary/nametag.webp",
       },
       {
         id: 6003,
@@ -367,7 +367,7 @@ export const produk = [
           "Cetak amplop kop surat untuk kebutuhan organisasi dan perusahaan",
         Harga: 120000,
         satuan: "Kotak",
-        img: "src/img/produk/stasionary/amplop-putih.png",
+        img: "src/img/produk/stasionary/amplop-putih.webp",
       },
       {
         id: 6004,
@@ -375,7 +375,7 @@ export const produk = [
         deskripsi: "Pulpen yang bisa di custom sesuai acara atau institusi",
         Harga: 7000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/pulpen-custom.png",
+        img: "src/img/produk/stasionary/pulpen-custom.webp",
       },
       {
         id: 6005,
@@ -383,7 +383,7 @@ export const produk = [
         deskripsi: "Medali berbagai jenis untuk lomba atau kelulusan",
         Harga: 15000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/medali.png",
+        img: "src/img/produk/stasionary/medali.webp",
       },
       {
         id: 6006,
@@ -391,7 +391,7 @@ export const produk = [
         deskripsi: "Kalender dinding dengan berbagai desain dan bahan",
         Harga: 15000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/kalender-dinding.png",
+        img: "src/img/produk/stasionary/kalender-dinding.webp",
       },
       {
         id: 6007,
@@ -399,7 +399,7 @@ export const produk = [
         deskripsi: "Kalender meja berbagai ukuran dan desain sesuai keinginan",
         Harga: 45000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/kalender-meja.png",
+        img: "src/img/produk/stasionary/kalender-meja.webp",
       },
       {
         id: 6008,
@@ -407,7 +407,7 @@ export const produk = [
         deskripsi: "Map custom sesuai kegunaan dan institusi anda",
         Harga: 15000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/map-custom.png",
+        img: "src/img/produk/stasionary/map-custom.webp",
       },
       {
         id: 6009,
@@ -416,7 +416,7 @@ export const produk = [
           "Stempel untuk berbagai keperluan anda dengan berbagai warna tinta",
         Harga: 50000,
         satuan: "Pcs",
-        img: "src/img/produk/stasionary/stempel-flash.png",
+        img: "src/img/produk/stasionary/stempel-flash.webp",
       },
     ],
   },
@@ -430,7 +430,7 @@ export const produk = [
           "Mug yang cocok untuk hadiah atau merchandise dengan desain sesuai keinginan",
         Harga: 35000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/mug-3.png",
+        img: "src/img/produk/merchandise/mug-3.webp",
       },
       {
         id: 7002,
@@ -439,7 +439,7 @@ export const produk = [
           "Sesuaikan Tumbler dengan selera anda, bisa full color atau grafir",
         Harga: 75000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/tumbler-custom.png",
+        img: "src/img/produk/merchandise/tumbler-custom.webp",
       },
       {
         id: 7003,
@@ -448,7 +448,7 @@ export const produk = [
           "Jam Custom yang cocok untuk hadiah pernikahan atau merchandise",
         Harga: 60000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/jam-dinding.png",
+        img: "src/img/produk/merchandise/jam-dinding.webp",
       },
       {
         id: 7004,
@@ -457,7 +457,7 @@ export const produk = [
           "Pin untuk acara anda, dengan bahan plastik, akrilik, dan besi",
         Harga: 10000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/pin.png",
+        img: "src/img/produk/merchandise/pin.webp",
       },
       {
         id: 7005,
@@ -465,7 +465,7 @@ export const produk = [
         deskripsi: "Ganci berbagai jenis dari plastik, akrilik dan yang lain",
         Harga: 12000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/gantungan-kunci.png",
+        img: "src/img/produk/merchandise/gantungan-kunci.webp",
       },
       {
         id: 7006,
@@ -473,7 +473,7 @@ export const produk = [
         deskripsi: "Kipas custom dengan berbagai desain, untuk banyak acara",
         Harga: 10000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/kipas-custom.png",
+        img: "src/img/produk/merchandise/kipas-custom.webp",
       },
       {
         id: 7007,
@@ -482,7 +482,7 @@ export const produk = [
           "Plakat yang biasa untuk acara, penghargaan, dan kenang-kenangan",
         Harga: 90000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/medali-akrilik.png",
+        img: "src/img/produk/merchandise/medali-akrilik.webp",
       },
       {
         id: 7008,
@@ -491,7 +491,7 @@ export const produk = [
           "Sablon Payung dengan logo acara atau perusahaan anda dengan full color atau 1 warna",
         Harga: 7000,
         satuan: "Pcs",
-        img: "src/img/produk/merchandise/payung.png",
+        img: "src/img/produk/merchandise/payung.webp",
       },
     ],
   },
@@ -502,7 +502,7 @@ export const faq = [
     pertanyaan:
       "Bagaimana ketentuan file yang benar dan sesuai agar proses dan hasil cetak lebih bagus dan tidak buram atau pecah ?",
     jawaban: `Agar hasil cetak bagus dan tidak pecah, anda bisa mengirim file dengan ketentuan berikut : <br>
-    1. kirim file dengan extensi *.pdf, *.cdr, *.psd, *.eps, *.ai, *.jpg, *.png.<br>
+    1. kirim file dengan extensi *.pdf, *.cdr, *.psd, *.eps, *.ai, *.jpg, *.webp.<br>
     2. untuk resolusi dianjurkan menggunakan 300dpi agar hasil print tidak pecah.<br>
     3. ukuran file harus minimal sama dengan ukuran cetaknya agar kualitas tetap bagus.<br>
     4. mode warna yg direkomendasikan adalah CMYK.<br>

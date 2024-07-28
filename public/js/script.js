@@ -232,6 +232,7 @@ function productContainer() {
   );
 
   title.innerText = "Product List";
+  title.setAttribute("data-aos", "fade-up");
 
   const itemCont = itemContainer();
 
@@ -254,6 +255,7 @@ function itemContainer() {
       "bg-blue-400",
       "mt-8"
     );
+    kategoriTitleContainer.setAttribute("data-aos", "fade-up");
 
     const title = document.createElement("h1");
     title.classList.add("font-bold", "text-2xl", "text-white", "mb-6", "py-2");
@@ -293,6 +295,7 @@ function subitemContainer(item) {
       "rounded-md",
       "p-2"
     );
+    subItem.setAttribute("data-aos", "fade-up");
 
     const imgContainer = document.createElement("div");
     imgContainer.classList.add(
